@@ -1,0 +1,16 @@
+[package]
+name = "Sample-for-13119"
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+
+[lib]
+name = "sample_13119"
+crate-type = ["cdylib"]
+
+[dependencies]
+signal-hook-tokio = "0.3.1"
+tokio = { version = "^1", features = ["rt", "macros", "rt-multi-thread", "time"] }
+tracing-subscriber = "0.3.16"
+log = "0.4.20"
+
